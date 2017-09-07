@@ -23,10 +23,10 @@ USE_RC_SUBR=	blackbox_exporter
 
 STRIP=		# stripping can break go binaries
 
-PLIST_FILES=	bin/blackbox_exporter \
-		etc/rc.d/blackbox_exporter
-
 do-install:
-	${INSTALL_PROGRAM} ${WRKDIR}/bin/blackbox_exporter ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKDIR}/bin/blackbox_exporter ${STAGEDIR}/${PREFIX}/bin
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/example.yml ${STAGEDIR}/${PREFIX}/etc/${PORTNAME}.yml.sample
 
 .include <bsd.port.mk>
