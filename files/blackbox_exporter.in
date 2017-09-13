@@ -10,7 +10,7 @@
 # blackbox_exporter_enable (bool):          Set to NO by default.
 #               Set it to YES to enable blackbox_exporter.
 # blackbox_exporter_user (string):          Set user that blackbox_exporter will run under
-#               Default is "nobody".
+#               Default is "root".
 # blackbox_exporter_group (string):         Set group that blackbox_exporter will run under
 #               Default is "nobody".
 # blackbox_exporter_args (string):          Set extra arguments to pass to blackbox_exporter
@@ -26,7 +26,7 @@ rcvar=blackbox_exporter_enable
 load_rc_config $name
 
 : ${blackbox_exporter_enable:="NO"}
-: ${blackbox_exporter_user:="nobody"}
+: ${blackbox_exporter_user:="root"}
 : ${blackbox_exporter_group:="nobody"}
 : ${blackbox_exporter_args:=""}
 : ${blackbox_exporter_conf:="%%PREFIX%%/etc/blackbox_exporter.yml"}
