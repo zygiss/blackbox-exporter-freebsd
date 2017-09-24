@@ -40,6 +40,7 @@ command_args="-p ${pidfile} -- /usr/bin/env ${procname} \
     ${blackbox_exporter_args}"
 
 start_precmd=${name}_startprecmd
+extra_commands="reload"
 
 blackbox_exporter_startprecmd()
 {
