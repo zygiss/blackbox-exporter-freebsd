@@ -1,6 +1,3 @@
-# Created by: Žygis Škulteckis <ports@zx23.net>
-# $FreeBSD$
-
 PORTNAME=	blackbox_exporter
 PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=v
