@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	blackbox_exporter
-PORTVERSION=	0.8.1
+PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 
